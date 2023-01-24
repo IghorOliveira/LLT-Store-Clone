@@ -1,0 +1,72 @@
+@use '../partials/vars' as *;
+
+footer {
+    margin-top: 2.5rem;
+    margin-bottom: 5.375rem;
+
+    @include media-breakpoint-only(sm){
+        margin-bottom: 3rem;
+    }
+
+    @include media-breakpoint-only(md){
+        margin-bottom: 5rem;
+    }
+
+    .newsletter__form--control{
+        margin-top: 10px;
+        .newsletter__form--input{
+            width: 100%;
+            padding: 15px 50px 15px 15px;
+            outline: none;
+            border: none;
+            border-radius: 0;
+            border-bottom: 2px solid $black;
+            box-shadow: none !important;
+    
+            &:focus, &:active{
+                border-bottom: 4px solid $black;
+                
+            } 
+            @include media-breakpoint-down(sm){
+                width: 80%;
+                padding: 5px 50px 5px 5px;
+                margin: 0 auto;
+
+                &:focus, &:active{
+                    border-bottom: 2px solid $black;
+                    
+                } 
+            }
+            
+        }
+
+        label{
+            padding-left: 50px !important;
+            font-weight: 600;
+            color: rgba($black, 0.5);
+            letter-spacing: 0.06rem;
+        }
+    }
+    
+
+    .icon__container{
+        position: relative;
+
+        i{
+            position: absolute;
+             bottom: 95px; 
+             right: 65px; 
+ 
+            @include media-breakpoint-only(sm){
+                bottom: 35px;
+            }
+
+            @include media-breakpoint-only(md){
+                bottom: 270px;
+            }
+
+            
+        
+        }
+    }
+}

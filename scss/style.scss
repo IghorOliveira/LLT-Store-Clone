@@ -1,0 +1,15 @@
+/* @use 'partials/reset' as *; */
+@use 'partials/typography' as *;
+@use "../node_modules/font-awesome/css/font-awesome.css" as *;
+@use 'partials/carrosel' as *;
+@use 'components/navbar' as *;
+@use 'components/intro' as *;
+@use 'components/first_line';
+@use 'components/best-sellers' as *;
+@use 'components/footer' as*;
+
+
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
