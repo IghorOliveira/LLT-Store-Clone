@@ -1,7 +1,7 @@
 @use '../partials/vars' as *;
 
 footer {
-    margin-top: 2.5rem;
+    margin-top: 100px;
     margin-bottom: 5.375rem;
 
     @include media-breakpoint-only(sm){

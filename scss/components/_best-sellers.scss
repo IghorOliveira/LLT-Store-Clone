@@ -1,0 +1,13 @@
+.best-sellers{
+    margin-top: 150px;
+}
+
+.best-sellers__container--mobile{
+    height: 450px;
+
+    .carousel-item{
+        .img-fluid{
+            height: 50% !important;
+        }
+    }
+}

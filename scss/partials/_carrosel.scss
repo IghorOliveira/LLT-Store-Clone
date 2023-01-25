@@ -1,20 +1,29 @@
 @use 'vars' as *;
 
-.carousel-indicators{
+
+.indicators--intro{
     border: 3px solid $terciary;
     border-radius: 25px;
-    width: 100px;
+    width: 150px;
     margin: 0 auto;
     margin-bottom: 13px;
     padding: 0 0;
 
-    @include media-breakpoint-down(md){
-        width: 100px;
+    @include media-breakpoint-only(md){
+        width: 150px !important;
+        height: 30px;
+        padding: 0;
+        padding-bottom: 30px;    
+    }
+
+    @include media-breakpoint-down(sm){
+        width: 100px !important;
         height: 30px;
         padding: 0;
         padding-bottom: 30px;
-        margin-bottom: 3px;
     }
+
+
 }
 .carousel-indicators-round{ 
     width: 12px !important; 
@@ -38,13 +47,55 @@
     }
 } 
 
+.indicator-mobile{
+    border: 3px solid $terciary;
+    border-radius: 25px;
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 13px;
+    padding: 0 0;
+
+    @include media-breakpoint-only(md){
+        width: 150px !important;
+        height: 30px;
+        padding: 0;
+        padding-bottom: 30px;
+        margin-bottom: -60px;
+    }
+
+    @include media-breakpoint-down(sm){
+        width: 100px !important;
+        height: 30px;
+        padding: 0;
+        padding-bottom: 30px;
+        margin-bottom: -50px;
+    }
+}
+
+
 
 .carousel-control-prev{
     justify-content: start;
     margin-left: 45px;
 
+    .fa-chevron-left{
+        color: $orange;
+    }
+
     @include media-breakpoint-down(md){
-        display:none;
+        margin-left: 0;
+    }
+}
+
+.arrow-intro-prev{
+    @include media-breakpoint-down(md){
+        margin-left: 45px !important;
+    }
+}
+
+.arrow-intro-next{
+    @include media-breakpoint-down(md){
+        margin-right: 45px !important;
     }
 }
 
@@ -52,8 +103,12 @@
     justify-content: end;
     margin-right: 45px;
 
+    .fa-chevron-right{
+        color: $orange;
+    }
+
     @include media-breakpoint-down(md){
-        display:none;
+        margin-right: 0;
     }
 }
 

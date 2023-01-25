@@ -1,0 +1,15 @@
+.archive{
+    margin-top: 100px;
+}
+
+.archive__container--mobile{
+    height: 540px;
+
+    .carousel-item{
+        h3, h6, p{
+            width: 80%;
+            margin: 0 auto;
+        }
+
+    }
+}
